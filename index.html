@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="albumApp">
 
 <head>
   <title>Photo Album</title>
@@ -7,16 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/angular-snap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
   
-
+  <snap-drawer>
+    <p>I'm a drawer!</p>
+    <button snap-close>Close</button>
+  </snap-drawer>
+  <snap-content>
+    <p>Hello</p>
+    <p>Drag to open or use the toggle button</p>
+    <button snap-toggle="">Toggle</button>
+  </snap-content>
+  
   
   <script src="lib/angular.min.js"></script>
   <script src="lib/snap.min.js"></script>
   <script src="lib/angular-snap.min.js"></script>
+  <script src="app/app.js"></script>
 </body>
 
 
