@@ -1,4 +1,61 @@
+/*p{
+  margin:0;
+}
+
 snap-content {
   background-color: #FFF;
 }
+
+.home-menu-item {
+  height:60px;
+  width:98%;
+  border: 1px solid #CCC;
+  background-color:yellow;
+  margin: 0 auto 10px auto;
+  padding: 3px 0;
+}
+
+.home-menu-item-thumbnail {
+  height: 60px;
+  margin-left: 5px;
+  display: block;
+  float: left;
+}
+
+.home-menu-item-title {
+  margin-left: 5%;
+  font: 150% bold Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color:blue;
+  float:left;
+  line-height: 60px;
+}*/
+
+
+/* Swipe works with mouse as well but often causes text selection. */
+#demo-page * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Arrow only buttons in the header. */
+#demo-page .ui-header .ui-btn {
+    background: none;
+    border: none;
+    top: 9px;
+}
+#demo-page .ui-header .ui-btn-inner {
+    border: none;
+}
+/* Content styling. */
+dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
+dt { font-size: 2em; font-weight: bold; }
+dt span { font-size: .5em; color: green; margin-left: .5em; }
+dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+.back-btn { float: right; margin: 0 2em 1em 0; }
+
+
+
 

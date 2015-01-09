@@ -6,28 +6,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/angular-snap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
-  
-  <snap-drawer>
-    <p>I'm a drawer!</p>
-    <button snap-close>Close</button>
-  </snap-drawer>
-  <snap-content>
-    <p>Hello</p>
-    <p>Drag to open or use the toggle button</p>
-    <button snap-toggle="">Toggle</button>
-  </snap-content>
-  
-  
+
+  <div data-role="page" id="demo-page" data-theme="a" data-url="demo-page">
+    <div data-role="header" data-theme="a">
+        <h1>Swipe left or right</h1>
+        <a href="#left-panel" data-theme="a" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+        <a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        <dl>
+            <dt>Swipe <span>verb</span></dt>
+            <dd><b>1.</b> to strike or move with a sweeping motion</dd>
+        </dl>
+        <a href="#demo-intro" data-rel="back" class="back-btn" data-role="button" data-mini="true" data-inline="true" data-icon="back" data-iconpos="right">Back to demo intro</a>
+    </div><!-- /content -->
+    <div data-role="panel" id="left-panel" data-theme="a">
+        <p>Left reveal panel.</p>
+        <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+    </div><!-- /panel -->
+    <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="a">
+        <p>Right push panel.</p>
+        <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+    </div><!-- /panel -->
+</div>
+
+
+
+
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+  <script src="lib/jquery-1.11.2.min.js"></script>
+  <script src="lib/jquery.mobile-1.4.5.min.js"></script>
   <script src="lib/angular.min.js"></script>
-  <script src="lib/snap.min.js"></script>
-  <script src="lib/angular-snap.min.js"></script>
   <script src="app/app.js"></script>
+
 </body>
 
 
