@@ -1,18 +1,14 @@
-/*p{
+p{
   margin:0;
-}
-
-snap-content {
-  background-color: #FFF;
 }
 
 .home-menu-item {
   height:60px;
-  width:98%;
+  width:100%;
   border: 1px solid #CCC;
-  background-color:yellow;
   margin: 0 auto 10px auto;
   padding: 3px 0;
+  cursor: pointer;
 }
 
 .home-menu-item-thumbnail {
@@ -23,14 +19,66 @@ snap-content {
 }
 
 .home-menu-item-title {
-  margin-left: 5%;
+  margin-left:2%;
+  border-left:1px solid #CCC;
   font: 150% bold Helvetica, Arial, sans-serif;
   color: #000;
-  background-color:blue;
   float:left;
   line-height: 60px;
-}*/
+  padding-left:2%;
+}
 
+.view-mode-img {
+  width:98%;
+  margin: 0 auto;
+  box-shadow: 1px -1px 1px #333;
+  display: block;
+}
+
+#menu-button, #back-btn {
+  top:1px !important;
+  font-size:250%;
+  font-style:bold;
+  padding:0 9px !important;
+  line-height:38px !important;
+  border:1px solid #BBB !important;
+  border-radius: 8px !important;
+}
+
+#back-btn {
+  top:0px;
+  left:75px;
+  background-color:#e9e9e9 !important;
+  font-style:normal !important;
+  font-size:150%;
+  padding:0 12px 0 11px !important;
+  
+}
+
+#left-panel p {
+  font: 80% Helvetica, Arial, sans-serif;
+  line-height: 60px;
+}
+
+#left-panel .home-menu-item {
+  width:96%;
+  border:none;
+  border-bottom:1px solid #CCC;
+  border-top: 1px solid #CCC;
+  margin-bottom:1px;
+}
+
+#album-photos-thumbs {
+  
+}
+
+.ui-title{
+  
+}
+
+#back-btn {
+
+}
 
 /* Swipe works with mouse as well but often causes text selection. */
 #demo-page * {
@@ -55,7 +103,6 @@ dt { font-size: 2em; font-weight: bold; }
 dt span { font-size: .5em; color: green; margin-left: .5em; }
 dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
 .back-btn { float: right; margin: 0 2em 1em 0; }
-
 
 
 
