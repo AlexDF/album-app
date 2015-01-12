@@ -20,19 +20,22 @@ albumApp.controller('listPhotos', function($scope, $compile) {
                                      'ui-btn ui-shadow ui-corner-all" data-role="button" ' + 
                                      'role="button">&#9664;</a>')($scope));
   }
-
+      output = "";
       var filepath;
+      output += '<div class="album-photos-wrapper">';
       for (var i=1; i<=30; i++) {
         filepath = 'img/photos/1-' + i + '.jpg';
         output += '<div ng-click="list.displayPhoto(' + albumId + ', ' + numPhotos + ', \'' + filepath + 
-                  '\')"><img class="album-photos-thumbs" width="80" src="' + filepath + '"></div>';
+                  '\')"><img class="album-photos-thumbs" src="' + filepath + '"></div>';
+
+        /*output += '<div class="album-photos-thumbs" style="background-color:#000; background:url(' + filepath + ') no-repeat; background-size:contain; background-position:center center" ng-click="list.displayPhoto(' + albumId + ', ' + numPhotos + ', \'' + filepath + 
+                  '\')"></div>';*/
+
       }
-      
+      output += "</div>";
       var answer = $compile(output)($scope);
       
-      $('#main-viewport').html(
-        answer
-        );
+      $('#main-viewport').html( answer );
   },
 
   this.displayPhoto = function( albumId, numPhotos, filepath) {
